@@ -7,7 +7,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <a class="navbar-brand" href="{{route('student')}}"><img src="{{asset('icon/icon.png')}}" style="height: 40px;"></a>
+  <a class="navbar-brand" href="{{route('student')}}"><img src="{{asset('icon/exam.png')}}" style="height: 55px;"></a>
 
   <div class="collapse navbar-collapse" id="target">
     <ul class="navbar-nav mx-auto">

@@ -17,10 +17,10 @@
     <script type="text/javascript" src="{{asset('js/bootstrap.js')}}"></script>
 
     <title>Exam Management System</title>
-    <link rel="icon" type="icon" href="{{asset('icon/icon.png')}}">
+    <link rel="icon" type="icon" href="{{asset('icon/exam.png')}}">
 </head>
 
-<body style="background-color: #202a3f;">
+<body style="background-color: whitesmoke;">
 
     <div class="container">
         <br>
@@ -33,7 +33,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <a class="navbar-brand" href="{{route('student')}}"><img src="{{asset('icon/icon.png')}}" style="height: 40px;"></a>
+            <a class="navbar-brand" href="{{route('student')}}"><img src="{{asset('icon/exam.png')}}" style="height: 55px;"></a>
 
             <div class="collapse navbar-collapse" id="target">
                 <ul class="navbar-nav mx-auto">
@@ -138,7 +138,7 @@
                         <div class="card-deck">
                             <!--Upcoming Exam Cards-->
                             <div class="card " style="width: 15rem; background-color: #26a69a;">
-                                <img class="card-img-top ml-5" src="{{asset('icon/icon.png')}}" style="height: 60px; width: 60px;" alt="Card image cap">
+                                <img class="card-img-top ml-5" src="{{asset('icon/exam.png')}}" style="height: 60px; width: 60px;" alt="Card image cap">
                                 <div class="card-body">
                                     <h6 class="card-title text-uppercase">Exam title: <span style="color: #e0f2f1;">{{$e->examtitle}}</span></h6>
                                     <ul>
@@ -161,7 +161,7 @@
                 <!--	 <div class="card" style="width: 15rem; background-color: #80deea;">
 						<!--	 <div class="card" style="width: 15rem; background-color: #80deea;">
 						<!--	 <div class="card" style="width: 15rem; background-color: #80deea;">
-					 <img class="card-img-top ml-5" src="{{asset('icon/icon.png')}}" style="height: 100px; width: 100px;" alt="Card image cap">
+					 <img class="card-img-top ml-5" src="{{asset('icon/exam.png')}}" style="height: 100px; width: 100px;" alt="Card image cap">
 					 <div class="card-body">
 						 <h5 class="card-title">Card title</h5>
 						 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -184,7 +184,7 @@
                     @endif @csrf
 
                     <h2 class="text-success text-uppercase text-center">
-										 <img class="pb-2 pr-2" src="{{asset('icon/icon.png')}}" style="height: 40px;"> Login
+										 <img class="pb-2 pr-2" src="{{asset('icon/exam.png')}}" style="height: 55px;"> Login
 										</h2>
 
                     <div class="form-group">

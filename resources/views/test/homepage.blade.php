@@ -28,7 +28,7 @@
 									 <!--Upcoming Exam Cards-->
 
 									 <div class="card " style="width: 15rem; background-color: #fbc02d;">
-							 <img class="card-img-top ml-5" src="{{asset('icon/icon.png')}}" style="height: 100px; width: 100px;" alt="Card image cap">
+							 <img class="card-img-top ml-5" src="{{asset('icon/exam.png')}}" style="height: 100px; width: 100px;" alt="Card image cap">
 							 <div class="card-body">
 								 <h5 class="card-title">{{$card->title}}</h5>
 								 <p class="card-text">{{$card->description}}</p>
@@ -45,7 +45,7 @@
 
 				 <!--Ongoing Exam Cards-->
 						<!--	 <div class="card" style="width: 15rem; background-color: #80deea;">
-					 <img class="card-img-top ml-5" src="{{asset('icon/icon.png')}}" style="height: 100px; width: 100px;" alt="Card image cap">
+					 <img class="card-img-top ml-5" src="{{asset('icon/exam.png')}}" style="height: 100px; width: 100px;" alt="Card image cap">
 					 <div class="card-body">
 						 <h5 class="card-title">Card title</h5>
 						 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -64,7 +64,7 @@
 
 
 										<h2 class="text-success text-uppercase text-center">
-										 <img class="pb-2 pr-2" src="{{asset('icon/icon.png')}}" style="height: 40px;"> Login
+										 <img class="pb-2 pr-2" src="{{asset('icon/exam.png')}}" style="height: 55px;"> Login
 										</h2>
 
 								 <div class="form-group">

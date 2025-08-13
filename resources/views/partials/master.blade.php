@@ -16,10 +16,10 @@
   <script type="text/javascript" src="{{asset('js/bootstrap.js')}}"></script>
 
 	<title>Exam Management System</title>
-	<link rel="icon" type="icon" href="{{asset('icon/icon.png')}}">
+	<link rel="icon" type="icon" href="{{asset('icon/exam.png')}}">
 </head>
 
-<body style="background-color: #202a3f;">
+<body style="background-color: whitesmoke;">
 
 	<div class="container"><br>
 

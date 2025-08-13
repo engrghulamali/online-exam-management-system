@@ -15,7 +15,7 @@
         						</div>
                   @endif
                     @csrf
-                    <h2 class="text-success text-uppercase text-center"><img class="pb-2 pr-2" src="{{asset('icon/icon.png')}}" style="height: 40px;">Teacher Login</h2>
+                    <h2 class="text-success text-uppercase text-center"><img class="pb-2 pr-2" src="{{asset('icon/exam.png')}}" style="height: 55px;">Teacher Login</h2>
                   <div class="form-group">
                     <label for="exampleInputEmail1" class="text-success">New Password</label>
                     <input type="password" name="password1" class="form-control" id="exampleInputEmail1" placeholder="New Password" required>

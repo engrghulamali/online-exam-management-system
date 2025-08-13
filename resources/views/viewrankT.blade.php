@@ -16,7 +16,7 @@
   <script type="text/javascript" src="{{asset('js/bootstrap.js')}}"></script>
 
 	<title>Exam Management System</title>
-	<link rel="icon" type="icon" href="{{asset('icon/icon.png')}}">
+	<link rel="icon" type="icon" href="{{asset('icon/exam.png')}}">
 
 	<style>
 		.dropdown-menu li:hover{
@@ -29,7 +29,7 @@
 
 </head>
 
-<body style="background-color: #202a3f;">
+<body style="background-color: whitesmoke;">
 
 	<div class="container"><br>
 
@@ -42,7 +42,7 @@
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
 
-		  <a class="navbar-brand" href="{{route('teacherdash')}}"><img src="{{asset('icon/icon.png')}}" style="height: 40px;"></a>
+		  <a class="navbar-brand" href="{{route('teacherdash')}}"><img src="{{asset('icon/exam.png')}}" style="height: 55px;"></a>
 
 		  <div class="collapse navbar-collapse" id="target">
 		    <ul class="navbar-nav mx-auto">

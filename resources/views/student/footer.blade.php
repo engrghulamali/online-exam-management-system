@@ -28,7 +28,7 @@
   }
 
   .footer {
-    background: linear-gradient(135deg, #28a745, #1d8348);
+    background: linear-gradient(135deg, darkcyan, #1d8348);
     color: white;
     padding: 20px 0;
     position: relative;

@@ -63,7 +63,7 @@
             <div>
                <!--Upcoming Exam Cards-->
                <div class="card mx-auto mb-5" style="background-color: #26a69a;">
-                   <img class="card-img-top ml-5 mt-2 mx-auto" src="{{asset('icon/icon.png')}}" style="height: 100px; width: 100px;" alt="Card image cap">
+                   <img class="card-img-top ml-5 mt-2 mx-auto" src="{{asset('icon/exam.png')}}" style="height: 100px; width: 100px;" alt="Card image cap">
                    <div class="card-body">
                      <h6 class="card-title text-uppercase text-center">Exam title: <span style="color: #e0f2f1;">{{$e->examtitle}}</span></h6>
                      <ul class="list-unstyled">

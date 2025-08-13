@@ -14,7 +14,7 @@
 	<script type="text/javascript" src="{{asset('js/bootstrap.js')}}"></script>
 
 	<title>Exam question</title>
-	<link rel="icon" type="icon" href="{{asset('icon/icon.png')}}">
+	<link rel="icon" type="icon" href="{{asset('icon/exam.png')}}">
 
 	<style>
 		.dropdown-menu li:hover{
@@ -25,7 +25,7 @@
 	</style>
 
 </head>
-<body style="background-color: #202a3f;">
+<body style="background-color: whitesmoke;">
 
 	<div class="container">
 
@@ -37,7 +37,7 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
-			<a class="navbar-brand" href="{{route('student')}}"><img src="{{asset('icon/icon.png')}}" style="height: 40px;"></a>
+			<a class="navbar-brand" href="{{route('student')}}"><img src="{{asset('icon/exam.png')}}" style="height: 55px;"></a>
 
 			<div class="collapse navbar-collapse" id="target">
 				<ul class="navbar-nav mx-auto">
