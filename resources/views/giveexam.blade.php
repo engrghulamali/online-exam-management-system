@@ -15,7 +15,7 @@
   <script type="text/javascript" src="{{asset('js/popper.js')}}"></script>
   <script type="text/javascript" src="{{asset('js/bootstrap.js')}}"></script>
 
-	<title>Exam Management System</title>
+	<title>Questionnaire Management System</title>
 	<link rel="icon" type="icon" href="{{asset('icon/exam.png')}}">
 
 	<style>
@@ -48,12 +48,12 @@
             <a href="{{route('studentDash')}}" class="nav-link btn-outline-info rounded text-white pr-3">HOME</a>
           </li>
 
-          <li class="nav-item">
+          <li class="nav-item d-none">
             <a href="{{route('aboutHome')}}" class="nav-link btn-outline-info rounded text-white pr-3">ABOUT</a>
           </li>
 
           <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle btn-outline-info rounded text-white" data-toggle="dropdown" data-target="dropdown_target pr-3">EXAM SCHEDULE</a>
+            <a href="#" class="nav-link dropdown-toggle btn-outline-info rounded text-white" data-toggle="dropdown" data-target="dropdown_target pr-3">QUESTIONNAIRE  SCHEDULE</a>
 
             <div class="dropdown-menu bg-info" aria-labelledby="dropdown_target">
               <a class="dropdown-item text-white" href="{{route('upcomingExam')}}">Upcoming Exam</a>
@@ -68,7 +68,7 @@
             <a href="{{route('noticeBoard')}}" class="nav-link btn-outline-info rounded text-white pr-3">NOTICE BOARD</a>
           </li>
 
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown d-none">
             <a href="#" class="nav-link dropdown-toggle btn-outline-info rounded text-white" data-toggle="dropdown" data-target="dropdown_target pr-3">CONTACT US</a>
 
             <div class="dropdown-menu bg-info" aria-labelledby="dropdown_target">
@@ -103,7 +103,7 @@
 
         <!-- Search Box -->
 
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto d-none">
           <form>
             <div class="input-group">
               <input class="form-control" type="text" name="search" placeholder="Search">
@@ -135,14 +135,14 @@
             <a href="{{route('studentDash')}}" class="text-white" style="text-decoration: none;"><i class="fas fa-home"></i> DASHBOARD</a>
           </li><hr style="border-color: white;">
           <li>
-            <a href="#" class="text-white dropdown-toggle" data-toggle="dropdown" rule="button" style="text-decoration: none;"><i class="fas fa-graduation-cap"></i> EXAMS</a>
+            <a href="#" class="text-white dropdown-toggle" data-toggle="dropdown" rule="button" style="text-decoration: none;"><i class="fas fa-graduation-cap"></i> Questionnaires  </a>
             <ul class="dropdown-menu bg-success">
-              <li class="dropdown-item"><a href="{{route('examlist')}}" class="dropdown-link text-white" style="text-decoration: none;">Exam List</a></li>
-              <li class="dropdown-item"><a href="{{route('examresult')}}" class="dropdown-link text-white" style="text-decoration: none;">Exam Result</a></li>
+              <li class="dropdown-item"><a href="{{route('examlist')}}" class="dropdown-link text-white" style="text-decoration: none;">Questionnaire List</a></li>
+              <li class="dropdown-item"><a href="{{route('examresult')}}" class="dropdown-link text-white" style="text-decoration: none;">Questionnaire Result</a></li>
             </ul>
 
           </li><hr style="border-color: white;">
-          <li>
+          <li class="d-none">
             <a href="#" class="text-white dropdown-toggle" data-toggle="dropdown" rule="button" style="text-decoration: none;"><i class="fab fa-accusoft"></i> HOME WORK</a>
 
             <ul class="dropdown-menu bg-success">
@@ -167,10 +167,10 @@
           <form class="" action="/view_result/{{$e->id}}" method="post">
             @csrf
 
-            <h4 class="text-uppercase text-center my-3 text-info">Exam Title: {{$e->examtitle}}</h4>
+            <h4 class="text-uppercase text-center my-3 text-info">Questionnaire Title: {{$e->examtitle}}</h4>
             <div class="row">
               <div class="col-md-4 col-lg-4">
-                  <div class="text-center"><b>Exam Date: {{$e->examdate}}</b></div>
+                  <div class="text-center"><b>Questionnaire Date: {{$e->examdate}}</b></div>
               </div>
               <div class="col-md-4">
                   <div class="text-center"><b>Total Time: {{$e->totaltime}} min</b></div>
@@ -217,7 +217,7 @@
     <hr style="border-color: mediumseagreen;">
     <div class="footer">
       <ul class="nav nav-pills nav-fill bg-success rounded">
-        <li class="nav-item">
+        <li class="nav-item d-none">
           <a href="{{route('ds')}}" class="nav-link text-white btn-outline-info"><i class="fab fa-connectdevelop"></i> Developers</a>
         </li>
         <li class="nav-item">

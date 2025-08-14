@@ -9,7 +9,7 @@ use App\Relation\Student;
 use App\Relation\ExamDetail;
 use App\Relation\Question;
 
-class myController extends Controller
+class MyController extends Controller
 {
 
 
@@ -532,7 +532,7 @@ class myController extends Controller
       if($time<$exam_ends) {
         //dd($time);
         $rs = \App\Relation\Result::where('student_id', \Auth::guard('students')->id())->where('exam_detail_id'
-        , $exam_detail->id)->exist();
+        , $exam_detail->id)->exists();
 
         if(!$rs)
         $result->save();

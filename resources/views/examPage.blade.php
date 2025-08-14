@@ -13,7 +13,7 @@
 	<script type="text/javascript" src="{{asset('js/popper.js')}}"></script>
 	<script type="text/javascript" src="{{asset('js/bootstrap.js')}}"></script>
 
-	<title>Exam question</title>
+	<title>Questionnaire question</title>
 	<link rel="icon" type="icon" href="{{asset('icon/exam.png')}}">
 
 	<style>
@@ -45,12 +45,12 @@
 						<a href="{{route('student')}}" class="nav-link btn-outline-info rounded text-white pr-3">HOME</a>
 					</li>
 
-					<li class="nav-item">
+					<li class="nav-item d-none">
 						<a href="{{route('about')}}" class="nav-link btn-outline-info rounded text-white pr-3">ABOUT</a>
 					</li>
 
 					<li class="nav-item dropdown">
-						<a href="#" class="nav-link dropdown-toggle btn-outline-info rounded text-white" data-toggle="dropdown" data-target="dropdown_target pr-3">EXAM SCHEDULE</a>
+						<a href="#" class="nav-link dropdown-toggle btn-outline-info rounded text-white" data-toggle="dropdown" data-target="dropdown_target pr-3">QUESTIONNAIRE  SCHEDULE</a>
 
 						<div class="dropdown-menu bg-info" aria-labelledby="dropdown_target">
 							<a class="dropdown-item text-white" href="{{route('upcomingExam')}}">Upcoming Exam</a>
@@ -65,7 +65,7 @@
 						<a href="{{route('noticeBoard')}}" class="nav-link btn-outline-info rounded text-white pr-3">NOTICE BOARD</a>
 					</li>
 
-					<li class="nav-item dropdown">
+					<li class="nav-item dropdown d-none">
 						<a href="#" class="nav-link dropdown-toggle btn-outline-info rounded text-white" data-toggle="dropdown" data-target="dropdown_target pr-3">CONTACT US</a>
 
 						<div class="dropdown-menu bg-info" aria-labelledby="dropdown_target">
@@ -96,7 +96,7 @@
 
 				<!-- Search Box -->
 
-				<ul class="navbar-nav ml-auto">
+				<ul class="navbar-nav ml-auto d-none">
 					<form>
 						<div class="input-group">
 							<input class="form-control" type="text" name="search" placeholder="Search">
@@ -120,7 +120,7 @@
 			<div class="rounded">
 
 					<div>
-						<h3 class="text-info text-uppercase text-center py-2">Exam Question</h3>
+						<h3 class="text-info text-uppercase text-center py-2">Questionnaire Question</h3>
 					</div>
 
 					<!--Quention Hare -->
@@ -129,7 +129,7 @@
 						<thead class="table-success">
 							<tr>
 								<th>No.</th>
-								<th>Exam Title</th>
+								<th>Questionnaire Title</th>
 								<th>Date</th>
 								<th>Attend Exam</th>
 							</tr>
@@ -167,7 +167,7 @@
 		<hr style="border-color: mediumseagreen;">
 		<div class="footer">
 			<ul class="nav nav-pills nav-fill bg-success rounded">
-				<li class="nav-item">
+				<li class="nav-item d-none">
 					<a href="{{route('developer')}}" class="nav-link text-white btn-outline-info"><i class="fab fa-connectdevelop"></i> Developers</a>
 				</li>
 				<li class="nav-item">

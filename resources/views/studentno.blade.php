@@ -18,12 +18,12 @@
 						</li><hr style="border-color: white;">
 
 						<li>
-							<a href="#" class="text-white dropdown-toggle" data-toggle="dropdown" rule="button" style="text-decoration: none;"><i class="fab fa-accusoft"></i> EXAMS INFO</a>
+							<a href="#" class="text-white dropdown-toggle" data-toggle="dropdown" rule="button" style="text-decoration: none;"><i class="fab fa-accusoft"></i> Questionnaires   INFO</a>
 
 							<ul class="dropdown-menu bg-success">
-								<li class="dropdown-item"><a href="{{route('examlistTeacher')}}" class="dropdown-link text-white" style="text-decoration: none;">Exam List</a></li>
-								<li class="dropdown-item"><a href="{{route('examname')}}" class="dropdown-link text-white" style="text-decoration: none;">Create Exam</a></li>
-								<li class="dropdown-item"><a href="{{route('examtrash')}}" class="dropdown-link text-white" style="text-decoration: none;">Exam Trash</a></li>
+								<li class="dropdown-item"><a href="{{route('examlistTeacher')}}" class="dropdown-link text-white" style="text-decoration: none;">Questionnaire List</a></li>
+								<li class="dropdown-item"><a href="{{route('examname')}}" class="dropdown-link text-white" style="text-decoration: none;">Create Questionnaire</a></li>
+								<li class="dropdown-item"><a href="{{route('examtrash')}}" class="dropdown-link text-white" style="text-decoration: none;">Questionnaire Trash</a></li>
 							</ul>
 						</li><hr style="border-color: white;">
 
@@ -32,11 +32,11 @@
 
 							<ul class="dropdown-menu bg-success">
 								<li class="dropdown-item"><a href="{{route('studentno')}}" class="dropdown-link text-white" style="text-decoration: none;">Student List</a></li>
-								<li class="dropdown-item"><a href="/examlistforrank" class="dropdown-link text-white" style="text-decoration: none;">Student Rank</a></li>
+								<li class="dropdown-item"><a href="/examlistforrank" class="dropdown-link text-white" style="text-decoration: none;">Student Group</a></li>
 							</ul>
 						</li><hr style="border-color: white;">
 
-						<li>
+						<li class="d-none">
 							<a href="#" class="text-white dropdown-toggle" data-toggle="dropdown" rule="button" style="text-decoration: none;"><i class="fas fa-download"></i> EXPORT IMPORT</a>
 
 							<ul class="dropdown-menu bg-success">
@@ -70,9 +70,9 @@
 						<thead class="table-success">
 							<tr>
 								<th>No.</th>
-								<th>Exam Title</th>
-								<th>Exam Date</th>
-								<th>Exam Time</th>
+								<th>Questionnaire Title</th>
+								<th>Questionnaire Date</th>
+								<th>Questionnaire Time</th>
 								<th>Student List</th>
 							</tr>
 						</thead>

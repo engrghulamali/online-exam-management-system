@@ -15,14 +15,14 @@
 							<a href="{{route('studentDash')}}" class="text-white" style="text-decoration: none;"><i class="fas fa-home"></i> DASHBOARD</a>
 						</li><hr style="border-color: white;">
 						<li>
-							<a href="#" class="text-white dropdown-toggle" data-toggle="dropdown" rule="button" style="text-decoration: none;"><i class="fas fa-graduation-cap"></i> EXAMS</a>
+							<a href="#" class="text-white dropdown-toggle" data-toggle="dropdown" rule="button" style="text-decoration: none;"><i class="fas fa-graduation-cap"></i> Questionnaires  </a>
 							<ul class="dropdown-menu bg-success">
-								<li class="dropdown-item"><a href="{{route('examlist')}}" class="dropdown-link text-white" style="text-decoration: none;">Exam List</a></li>
-								<li class="dropdown-item"><a href="{{route('examresult')}}" class="dropdown-link text-white" style="text-decoration: none;">Exam Result</a></li>
+								<li class="dropdown-item"><a href="{{route('examlist')}}" class="dropdown-link text-white" style="text-decoration: none;">Questionnaire List</a></li>
+								<li class="dropdown-item"><a href="{{route('examresult')}}" class="dropdown-link text-white" style="text-decoration: none;">Questionnaire Result</a></li>
 							</ul>
 
 						</li><hr style="border-color: white;">
-						<li>
+						<li class="d-none">
 							<a href="#" class="text-white dropdown-toggle" data-toggle="dropdown" rule="button" style="text-decoration: none;"><i class="fab fa-accusoft"></i> HOME WORK</a>
 
 							<ul class="dropdown-menu bg-success">
@@ -45,7 +45,7 @@
 					</div><hr>
 
 					<div>
-						<h4>Welcome to online Examination Portal</h4>
+						<h4>Welcome to online Questionnaire Portal</h4>
 					</div><hr>
 
 					<div class="card-deck card-center">
@@ -54,14 +54,14 @@
 
 							<div class="card-body bg-info">
 								<ul class="list-group list-group-flush">
-								    <li class="list-group-item bg-info"><a href="{{route('examlist')}}" class="text-white text-uppercase">exam List</a></li>
-								    <li class="list-group-item bg-info"><a href="{{route('examresult')}}" class="text-white text-uppercase">exam Result</a></li>
+								    <li class="list-group-item bg-info"><a href="{{route('examlist')}}" class="text-white text-uppercase">Questionnaire List</a></li>
+								    <li class="list-group-item bg-info"><a href="{{route('examresult')}}" class="text-white text-uppercase">Questionnaire Result</a></li>
 								</ul>
 
 							</div>
 						</div>
 
-						<div class="card text-white mx-5 my-4" style="max-width: 18rem; background-color: #e57373;">
+						<div class="card text-white mx-5 my-4 d-none" style="max-width: 18rem; background-color: #e57373;">
 							<div class="card-header text-right">HOME WORK</div>
 
 							<div class="card-body bg-info">

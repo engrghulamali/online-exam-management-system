@@ -15,7 +15,7 @@
   <script type="text/javascript" src="{{asset('js/popper.js')}}"></script>
   <script type="text/javascript" src="{{asset('js/bootstrap.js')}}"></script>
 
-	<title>Exam Management System</title>
+	<title>Questionnaire Management System</title>
 	<link rel="icon" type="icon" href="{{asset('icon/exam.png')}}">
 
 	<style>

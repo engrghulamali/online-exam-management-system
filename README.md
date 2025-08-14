@@ -1,4 +1,4 @@
-# Online Exam Management System
+# Online Questionnaire Management System
 ## Homepage
 ![Homepage](images/homepage.PNG)
 
@@ -54,7 +54,7 @@
    #### 2. You can parcipate in previous and ongoing exam.
    ![Homepage](images/Live%20Exams.PNG)
    
-   ##### Your score will be saved only for ongoing exam. Otherwise your score will not be updated, but you can see your current given exam result in the console.
+   ##### Your score will be saved only for ongoing exam. Otherwise your score will not be updated, but you can see your current given Questionnaire Result in the console.
    ![Homepage](images/Exam%20Question.PNG)
    ![Homepage](images/Exam%20Status.PNG)
    

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e83a805e-c709-4d90-98e8-f8433872dd5f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/myController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/myController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MyController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/exportquestionview.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/exportquestionview.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/homepage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/homepage.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/viewrankT.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/viewrankT.blade.php" afterDir="false" />

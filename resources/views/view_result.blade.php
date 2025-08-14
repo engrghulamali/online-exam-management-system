@@ -12,14 +12,14 @@
              <a href="{{route('studentDash')}}" class="text-white" style="text-decoration: none;"><i class="fas fa-home"></i> DASHBOARD</a>
            </li><hr style="border-color: white;">
            <li>
-             <a href="#" class="text-white dropdown-toggle" data-toggle="dropdown" rule="button" style="text-decoration: none;"><i class="fas fa-graduation-cap"></i> EXAMS</a>
+             <a href="#" class="text-white dropdown-toggle" data-toggle="dropdown" rule="button" style="text-decoration: none;"><i class="fas fa-graduation-cap"></i> Questionnaires  </a>
              <ul class="dropdown-menu bg-success">
-               <li class="dropdown-item"><a href="{{route('examlist')}}" class="dropdown-link text-white" style="text-decoration: none;">Exam List</a></li>
-               <li class="dropdown-item"><a href="{{route('examresult')}}" class="dropdown-link text-white" style="text-decoration: none;">Exam Result</a></li>
+               <li class="dropdown-item"><a href="{{route('examlist')}}" class="dropdown-link text-white" style="text-decoration: none;">Questionnaire List</a></li>
+               <li class="dropdown-item"><a href="{{route('examresult')}}" class="dropdown-link text-white" style="text-decoration: none;">Questionnaire Result</a></li>
              </ul>
 
            </li><hr style="border-color: white;">
-           <li>
+           <li class="d-none">
              <a href="#" class="text-white dropdown-toggle" data-toggle="dropdown" rule="button" style="text-decoration: none;"><i class="fab fa-accusoft"></i> HOME WORK</a>
 
              <ul class="dropdown-menu bg-success">
@@ -38,7 +38,7 @@
          </div>
 
          <div>
-           <h3 class="text-info">Exam Status</h3>
+           <h3 class="text-info">Questionnaire Status</h3>
          </div><hr>
 
          <!--
@@ -61,11 +61,11 @@
          </table>
        -->
             <div>
-               <!--Upcoming Exam Cards-->
+               <!--Upcoming Questionnaire Cards-->
                <div class="card mx-auto mb-5" style="background-color: #26a69a;">
                    <img class="card-img-top ml-5 mt-2 mx-auto" src="{{asset('icon/exam.png')}}" style="height: 100px; width: 100px;" alt="Card image cap">
                    <div class="card-body">
-                     <h6 class="card-title text-uppercase text-center">Exam title: <span style="color: #e0f2f1;">{{$e->examtitle}}</span></h6>
+                     <h6 class="card-title text-uppercase text-center">Questionnaire title: <span style="color: #e0f2f1;">{{$e->examtitle}}</span></h6>
                      <ul class="list-unstyled">
                        <li class="card-text text-center">Total Questions: {{count($e->questions)}}</li>
                        <li class="card-text text-center">Wrong Answer: {{count($e->questions)-$marks}}</li>

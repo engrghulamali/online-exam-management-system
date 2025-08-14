@@ -25,7 +25,7 @@
 					@foreach($card as $card)
 							<div class="col-sm-11 col-md-6 col-lg-6 mt-3">
 								 <div class="card-deck">
-									 <!--Upcoming Exam Cards-->
+									 <!--Upcoming Questionnaire Cards-->
 
 									 <div class="card " style="width: 15rem; background-color: #fbc02d;">
 							 <img class="card-img-top ml-5" src="{{asset('icon/exam.png')}}" style="height: 100px; width: 100px;" alt="Card image cap">
@@ -43,7 +43,7 @@
 
 
 
-				 <!--Ongoing Exam Cards-->
+				 <!--Ongoing Questionnaire Cards-->
 						<!--	 <div class="card" style="width: 15rem; background-color: #80deea;">
 					 <img class="card-img-top ml-5" src="{{asset('icon/exam.png')}}" style="height: 100px; width: 100px;" alt="Card image cap">
 					 <div class="card-body">

@@ -16,14 +16,14 @@
 							<a href="{{route('studentDash')}}" class="text-white" style="text-decoration: none;"><i class="fas fa-home"></i> DASHBOARD</a>
 						</li><hr style="border-color: white;">
 						<li>
-							<a href="#" class="text-white dropdown-toggle" data-toggle="dropdown" rule="button" style="text-decoration: none;"><i class="fas fa-graduation-cap"></i> EXAMS</a>
+							<a href="#" class="text-white dropdown-toggle" data-toggle="dropdown" rule="button" style="text-decoration: none;"><i class="fas fa-graduation-cap"></i> Questionnaires  </a>
 							<ul class="dropdown-menu bg-success">
-								<li class="dropdown-item"><a href="{{route('examlist')}}" class="dropdown-link text-white" style="text-decoration: none;">Exam List</a></li>
-								<li class="dropdown-item"><a href="{{route('examresult')}}" class="dropdown-link text-white" style="text-decoration: none;">Exam Result</a></li>
+								<li class="dropdown-item"><a href="{{route('examlist')}}" class="dropdown-link text-white" style="text-decoration: none;">Questionnaire List</a></li>
+								<li class="dropdown-item"><a href="{{route('examresult')}}" class="dropdown-link text-white" style="text-decoration: none;">Questionnaire Result</a></li>
 							</ul>
 
 						</li><hr style="border-color: white;">
-						<li>
+						<li class="d-none">
 							<a href="#" class="text-white dropdown-toggle" data-toggle="dropdown" rule="button" style="text-decoration: none;"><i class="fab fa-accusoft"></i> HOME WORK</a>
 
 							<ul class="dropdown-menu bg-success">
@@ -51,7 +51,7 @@
 						<thead class="table-success">
 							<tr>
 								<th>No.</th>
-								<th>Exam Title</th>
+								<th>Questionnaire Title</th>
 								<th>Date</th>
 								<th>Attend Exam</th>
 							</tr>

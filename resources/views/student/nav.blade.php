@@ -20,7 +20,7 @@
       </li>
 
       <li class="nav-item dropdown">
-        <a href="#" class="nav-link dropdown-toggle btn-outline-info rounded text-white" data-toggle="dropdown" data-target="dropdown_target pr-3">EXAM SCHEDULE</a>
+        <a href="#" class="nav-link dropdown-toggle btn-outline-info rounded text-white" data-toggle="dropdown" data-target="dropdown_target pr-3">QUESTIONNAIRE  SCHEDULE</a>
 
         <div class="dropdown-menu bg-info" aria-labelledby="dropdown_target">
           <a class="dropdown-item text-white" href="{{route('upcomingExam')}}">Upcoming Exam</a>

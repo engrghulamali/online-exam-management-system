@@ -41,7 +41,7 @@
 						<thead class="table-success">
 							<tr>
 								<th>No.</th>
-								<th>Exam Title</th>
+								<th>Questionnaire Title</th>
 								<th>Date</th>
 								<th>Attend Exam</th>
 							</tr>

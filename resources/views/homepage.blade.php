@@ -16,7 +16,7 @@
     <script type="text/javascript" src="{{asset('js/popper.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/bootstrap.js')}}"></script>
 
-    <title>Exam Management System</title>
+    <title>Questionnaire Management System</title>
     <link rel="icon" type="icon" href="{{asset('icon/exam.png')}}">
 </head>
 
@@ -41,12 +41,12 @@
                         <a href="{{route('student')}}" class="nav-link btn-outline-info rounded text-white pr-3">HOME</a>
                     </li>
 
-                    <li class="nav-item">
+                    <li class="nav-item d-none">
                         <a href="{{route('about')}}" class="nav-link btn-outline-info rounded text-white pr-3">ABOUT</a>
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle btn-outline-info rounded text-white" data-toggle="dropdown" data-target="dropdown_target pr-3">EXAM SCHEDULE</a>
+                        <a href="#" class="nav-link dropdown-toggle btn-outline-info rounded text-white" data-toggle="dropdown" data-target="dropdown_target pr-3">QUESTIONNAIRE  SCHEDULE</a>
 
                         <div class="dropdown-menu bg-info" aria-labelledby="dropdown_target">
                             <a class="dropdown-item text-white" href="{{route('upcomingHome')}}">Upcoming Exam</a>
@@ -61,7 +61,7 @@
                         <a href="{{route('noticeHome')}}" class="nav-link btn-outline-info rounded text-white pr-3">NOTICE BOARD</a>
                     </li>
 
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown d-none">
                         <a href="#" class="nav-link dropdown-toggle btn-outline-info rounded text-white" data-toggle="dropdown" data-target="dropdown_target pr-3">CONTACT US</a>
 
                         <div class="dropdown-menu bg-info" aria-labelledby="dropdown_target">
@@ -101,7 +101,7 @@
 
                 <!-- Search Box -->
 
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto d-none">
                     <form>
                         <div class="input-group">
                             <input class="form-control" type="text" name="search" placeholder="Search">
@@ -136,14 +136,14 @@
                     @foreach($es as $e)
                     <div class="col-sm-11 col-md-6 col-lg-6 mt-1 mb-3">
                         <div class="card-deck">
-                            <!--Upcoming Exam Cards-->
+                            <!--Upcoming Questionnaire Cards-->
                             <div class="card " style="width: 15rem; background-color: #26a69a;">
                                 <img class="card-img-top ml-5" src="{{asset('icon/exam.png')}}" style="height: 60px; width: 60px;" alt="Card image cap">
                                 <div class="card-body">
-                                    <h6 class="card-title text-uppercase">Exam title: <span style="color: #e0f2f1;">{{$e->examtitle}}</span></h6>
+                                    <h6 class="card-title text-uppercase">Questionnaire title: <span style="color: #e0f2f1;">{{$e->examtitle}}</span></h6>
                                     <ul>
-                                        <li class="card-text">Exam date: {{$e->examdate}}</li>
-                                        <li class="card-text">Exam time: {{$e->examtime}}</li>
+                                        <li class="card-text">Questionnaire date: {{$e->examdate}}</li>
+                                        <li class="card-text">Questionnaire time: {{$e->examtime}}</li>
                                         <li class="card-text">Total marks: {{$e->marks}}</li>
                                     </ul>
                                     <div class="row ml-auto">
@@ -157,7 +157,7 @@
                     @endforeach
                 </div>
 
-                <!--Ongoing Exam Cards-->
+                <!--Ongoing Questionnaire Cards-->
                 <!--	 <div class="card" style="width: 15rem; background-color: #80deea;">
 						<!--	 <div class="card" style="width: 15rem; background-color: #80deea;">
 						<!--	 <div class="card" style="width: 15rem; background-color: #80deea;">
@@ -223,7 +223,7 @@
         <hr style="border-color: mediumseagreen;">
         <div class="footer">
             <ul class="nav nav-pills nav-fill bg-success rounded">
-                <li class="nav-item">
+                <li class="nav-item d-none">
                     <a href="{{route('developer')}}" class="nav-link text-white btn-outline-info"><i class="fab fa-connectdevelop"></i> Developers</a>
                 </li>
                 <li class="nav-item">
