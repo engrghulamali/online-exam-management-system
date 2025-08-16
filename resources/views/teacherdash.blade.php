@@ -35,14 +35,6 @@
 								<li class="dropdown-item"><a href="/examlistforrank" class="dropdown-link text-white" style="text-decoration: none;">Student Group</a></li>
 							</ul>
 						</li><hr style="border-color: white;">
-						<li>
-							<a href="#" class="text-white dropdown-toggle" data-toggle="dropdown" rule="button" style="text-decoration: none;"><i class="fas fa-user"></i> STUDENT Groups</a>
-
-							<ul class="dropdown-menu bg-success">
-								<li class="dropdown-item"><a href="#" class="dropdown-link text-white" style="text-decoration: none;">Grade Management</a></li>
-								<li class="dropdown-item"><a href="#" class="dropdown-link text-white" style="text-decoration: none;">Student Groups</a></li>
-							</ul>
-						</li><hr style="border-color: white;">
 
 						<li class="d-none">
 							<a href="#" class="text-white dropdown-toggle" data-toggle="dropdown" rule="button" style="text-decoration: none;"><i class="fas fa-download"></i> EXPORT IMPORT</a>

@@ -88,7 +88,7 @@
 								<td>{{$e->examdate}}</td>
 								<td>{{$e->examtime}}</td>
 								<td>{{$e->marks}}</td>
-								<td><a href="/view-rankt/{{$e->id}}">view Rank</a></td>
+								<td><a href="/view-rankt/{{$e->id}}">View Groups</a></td>
 
 							</tr>
 							@php $i++ @endphp

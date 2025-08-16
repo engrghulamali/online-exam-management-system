@@ -86,7 +86,7 @@
 								<td>{{$e->examdate}}</td>
 								<td>{{$e->examtime}}</td>
 								<td>
-									<a href="/viewstudent/{{$e->id}}">view to export</a>
+									<a href="/viewstudent/{{$e->id}}">view to details</a>
 								</td>
 							</tr>
 							@php $i++ @endphp

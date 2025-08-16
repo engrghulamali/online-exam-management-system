@@ -551,13 +551,44 @@ class MyController extends Controller
       ]);
     }
 
-    public function viewrankT(\App\Relation\ExamDetail $e){
-      $results = \App\Relation\Result::orderBy('score','desc')
-      ->where('exam_detail_id',$e->id)->get();
-      return view('viewrankT')->with([
-        'rs' => $results,
-      ]);
+    public function viewrankT(\App\Relation\ExamDetail $e)
+    {
+        $results = \App\Relation\Result::with('student') // eager load student
+            ->where('exam_detail_id', $e->id)
+            ->orderBy('score', 'desc')
+            ->get();
+
+        foreach ($results as $r) {
+            // calculate percentage
+            $percentage = ($r->score / $e->marks) * 100;
+
+            // assign grade based on percentage
+            if ($percentage >= 90) {
+                $r->grade = "A+";
+            } elseif ($percentage >= 80) {
+                $r->grade = "A";
+            } elseif ($percentage >= 70) {
+                $r->grade = "B+";
+            } elseif ($percentage >= 60) {
+                $r->grade = "B";
+            } elseif ($percentage >= 50) {
+                $r->grade = "C";
+            } elseif ($percentage >= 40) {
+                $r->grade = "D";
+            } else {
+                $r->grade = "F";
+            }
+
+            // also keep percentage if you want in view
+            $r->percentage = round($percentage, 2);
+        }
+
+        return view('viewrankT')->with([
+            'rs' => $results,
+            'exam' => $e,
+        ]);
     }
+
 
     public function examlistforrank()
     {
@@ -566,10 +597,33 @@ class MyController extends Controller
 
     public function viewstudent(\App\Relation\ExamDetail $exam_detail)
     {
-      // dd($exam_detail->results);
+        $exam_detail->load('results.student');
+        // dd($exam_detail);
+        foreach ($exam_detail->results as $r) {
+            $percentage = ($r->score / $exam_detail->marks) * 100;
 
-      return view('viewstudent')->with(['e'=>$exam_detail->load('results.student')]);
+            if ($percentage >= 90) {
+                $r->grade = "A+";
+            } elseif ($percentage >= 80) {
+                $r->grade = "A";
+            } elseif ($percentage >= 70) {
+                $r->grade = "B+";
+            } elseif ($percentage >= 60) {
+                $r->grade = "B";
+            } elseif ($percentage >= 50) {
+                $r->grade = "C";
+            } elseif ($percentage >= 40) {
+                $r->grade = "D";
+            } else {
+                $r->grade = "F";
+            }
+
+            $r->percentage = round($percentage, 2); // optional, if you want to display % also
+        }
+
+        return view('viewstudent')->with(['e' => $exam_detail]);
     }
+
     public function editquestion( \App\Relation\Question $q){
       return view('editquestion')->with([
         'q'=>$q,
