@@ -25,13 +25,8 @@
                     <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
                   </div>
                   <div class="row">
-                    <div class="col-6">
-                      <div class="checkbox">
-                        <label class="text-success"><input name="rememberme" type="checkbox"> Remember Me</label>
-                      </div>
-                    </div>
-                    <div class="col-6">
-                      <a href="/resetpasswordT" class="text-success">Forgot password</a>
+                    <div class="col-12 mb-2">
+                      <a href="/teacher" class="text-success">If already not account, then sign-up</a>
                     </div>
                   </div>
                   <button type="submit" class="btn btn-success btn-block">Submit</button>

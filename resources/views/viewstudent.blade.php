@@ -58,7 +58,7 @@
          </li>
 
          <li class="nav-item">
-           <a href="#" class="nav-link btn-outline-info rounded text-white pr-3">NOTICE BOARD</a>
+           <a href="#" class="d-none nav-link btn-outline-info rounded text-white pr-3">NOTICE BOARD</a>
          </li>
 
          <li class="nav-item dropdown d-none">
@@ -170,20 +170,6 @@
 
         <div class="d-flex justify-content-between align-items-center mb-3">
           <h4 class="text-info mb-0">Student Lists</h4>
-
-          <div class="form-group d-flex align-items-center mb-0">
-            <label for="gradeFilter" class="mr-2 mb-0"><strong>Filter by Group</strong></label>
-            <select id="gradeFilter" class="form-control w-auto">
-              <option value="A+">A+</option>
-              <option value="A">A</option>
-              <option value="B+">B+</option>
-              <option value="B">B</option>
-              <option value="C">C</option>
-              <option value="D">D</option>
-              <option value="F">F</option>
-              <option value="all" selected>Show All</option>
-            </select>
-          </div>
         </div>
 
        <table id="example" class="table table-responsive-sm table-responsive-md table-striped table-bordered table-hover">
@@ -194,7 +180,6 @@
             <th>Reg. No.</th>
             <th>Dept.</th>
             <th>Marks</th>
-            <th>Grade</th>
           </tr>
         </thead>
 
@@ -207,7 +192,6 @@
             <td>{{$r->student->registration}}</td>
             <td>{{$r->student->department}}</td>
             <td>{{$r->score}}</td>
-            <td>{{$r->Group}}</td>
           </tr>
           @php $i++ @endphp
           @endforeach
@@ -259,30 +243,6 @@
      $("#example").tableHTMLExport({type:'pdf',filename:'student-list.pdf'});
    })
    </script>
-
-  <script>
-    $(document).ready(function() {
-        function filterTable(grade) {
-            $("#example tbody tr").each(function() {
-                var rowGrade = $(this).data("grade");
-                if (grade === "all" || rowGrade === grade) {
-                    $(this).show();
-                } else {
-                    $(this).hide();
-                }
-            });
-        }
-
-        // On page load → show all
-        filterTable("all");
-
-        // On dropdown change → filter
-        $("#gradeFilter").on("change", function() {
-            var selected = $(this).val();
-            filterTable(selected);
-        });
-    });
-  </script>
 
 
  </body>

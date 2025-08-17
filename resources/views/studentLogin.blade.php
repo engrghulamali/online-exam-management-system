@@ -29,11 +29,11 @@
                   <div class="row">
                     <div class="col-6">
                       <div class="checkbox">
-                        <label class="text-success"><input name="rememberme" type="checkbox"> Remember Me</label>
+                        <input name="rememberme" type="hidden">
                       </div>
                     </div>
-                    <div class="col-6">
-                      <a href="/resetpasswordS" class="text-success">Forgot password</a>
+                    <div class="col-6 mb-2">
+                      <a href="/student" class="text-success">If already not account, sign-up!</a>
                     </div>
                   </div>
 

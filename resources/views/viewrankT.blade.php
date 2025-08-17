@@ -59,18 +59,7 @@
 		      </li>
 
 		      <li class="nav-item">
-		        <a href="#" class="nav-link btn-outline-info rounded text-white pr-3">NOTICE BOARD</a>
-		      </li>
-
-		      <li class="nav-item dropdown">
-		        <a href="#" class="nav-link dropdown-toggle btn-outline-info rounded text-white" data-toggle="dropdown" data-target="dropdown_target pr-3">CONTACT US</a>
-
-		        <div class="dropdown-menu bg-info" aria-labelledby="dropdown_target">
-		          <a href="#" class="dropdown-item text-white"><i class="far fa-envelope"></i> Via Email</a>
-		          <a href="#" class="dropdown-item text-white"><i class="fab fa-facebook-messenger"></i> Via Messenger</a>
-		          <a href="#" class="dropdown-item text-white"><i class="fas fa-phone-volume"></i> Via Phone Call</a>
-		        </div>
-
+		        <a href="#" class="d-none nav-link btn-outline-info rounded text-white pr-3">NOTICE BOARD</a>
 		      </li>
 
 		      <li class="nav-item dropdown">
@@ -205,27 +194,27 @@
 						<tbody>
 							@php $i=1 @endphp
 							@foreach($rs as $r)
-	            <tr>
-					<td>{{$i}}</td>
-					<td>{{$r->student->name}}</td>
-					<td>{{$r->student->registration}}</td>
-					<td>{{$r->score}}</td>
-					@if($r->marks)
-					<td>{{(($r->score)*100)/($r->marks)}}%</td>
-					@endif
-					@if(!$r->marks)
+								<tr data-grade="{{ $r->grade }}">
+									<td>{{$i}}</td>
+									<td>{{$r->student->name}}</td>
+									<td>{{$r->student->registration}}</td>
+									<td>{{$r->score}}</td>
+									@if($r->marks)
+									<td>{{(($r->score)*100)/($r->marks)}}%</td>
+									@endif
+									@if(!$r->marks)
 
-					<td>{{$r->score}}%</td>
-					@endif
-					<td>{{$r->grade}}</td>
-	            </tr>
+									<td>{{$r->score}}%</td>
+									@endif
+									<td>{{$r->grade}}</td>
+								</tr>
 							@php $i++ @endphp
-	            @endforeach
+							@endforeach
 						</tbody>
-					</table><br>
-					<div class="text-right">
-			    	<button id="cmd" class="btn btn-info d-none">DOWNLOAD AS PDF</button>
-			    </div><hr><br><br><br>
+						</table><br>
+						<div class="text-right">
+						<button id="cmd" class="btn btn-info d-none">DOWNLOAD AS PDF</button>
+					</div><hr><br><br><br>
 
 
 				</div>
@@ -295,7 +284,7 @@
 				function filterTable(grade) {
 					$("#example tbody tr").each(function() {
 						var rowGrade = $(this).data("grade");
-						if (grade === "all" || rowGrade === grade) {
+						if (grade == "all" || rowGrade == grade) {
 							$(this).show();
 						} else {
 							$(this).hide();

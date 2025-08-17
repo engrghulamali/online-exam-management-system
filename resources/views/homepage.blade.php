@@ -58,7 +58,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="{{route('noticeHome')}}" class="nav-link btn-outline-info rounded text-white pr-3">NOTICE BOARD</a>
+                        <a href="{{route('noticeHome')}}" class="d-none nav-link btn-outline-info rounded text-white pr-3">NOTICE BOARD</a>
                     </li>
 
                     <li class="nav-item dropdown d-none">
