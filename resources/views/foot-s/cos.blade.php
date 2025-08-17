@@ -4,8 +4,7 @@
 	@section('content')
 
 
-
-		<hr><h2 class="text-success">Contact us</h2><hr>
+<div style="color:black !important>
 		<p class="text-white">
 			Exam_Management_System<br>
 			+8801625637753 <br>
@@ -18,7 +17,7 @@
 			workhours :10am-10pm
 		</p>
 
-		<hr><h2 class="text-success">Tell us about your dream....</h2><hr>
+		<hr><h2 class="text-success">Contact</h2><hr>
 
 		<h4 class="text-success">visit us</h4>
 		<p class="text-white">via postal code<br>
@@ -27,8 +26,8 @@
 
 		<h5 class="text-success">legal info</h5>
 		<p class="text-white mb-5">
-			exammanagementsystem@gmail.com<br>
-			via- +8801521305217
+			<br>
+			via- +92 307 6069 760
 
 		</p>
 

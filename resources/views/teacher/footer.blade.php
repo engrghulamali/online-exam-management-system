@@ -6,13 +6,8 @@
         <a href="{{route('dt')}}" class="nav-link text-white btn-outline-info"><i class="fab fa-connectdevelop"></i> Developers</a>
       </li>
       <li class="nav-item">
-        <a href="{{route('ct')}}" class="nav-link text-white btn-outline-info"><i class="far fa-copyright"></i> Copyright</a>
+        <a href="#" class="nav-link text-white btn-outline-info"><i class="far fa-copyright"></i> Copyright</a>
       </li>
-      <li class="nav-item">
-        <a href="{{route('ppt')}}" class="nav-link text-white btn-outline-info"><i class="fas fa-user-shield"></i>  Privacy Policy</a>
-      </li>
-      <li class="nav-item ">
-        <a href="{{route('cot')}}" class="nav-link text-white btn-outline-info"><i class="fas fa-file-signature"></i>  Contact</a>
       </li>
     </ul><hr>
   </div>
